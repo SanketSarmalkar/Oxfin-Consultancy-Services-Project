@@ -31,7 +31,7 @@ export default function Navbar() {
             <button
               onClick={toggleMenu}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="bg-blue-800 inline-flex items-center justify-center p-2 rounded-md text-white hover:text-blue-900 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-offset-gray-500 focus:ring-white"
               aria-controls="mobile-menu"
               aria-expanded={isMenuOpen}
             >

@@ -36,7 +36,7 @@ export default function PageView() {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevIndex) => (prevIndex + 1) % backgroundImages.length);
-    }, 6000);
+    }, 7000);
 
     return () => {
       clearInterval(interval);
@@ -123,9 +123,6 @@ export default function PageView() {
       </div>
       <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
         {renderDots()}
-      </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white text-center">
-        <p className="text-xl">[Company Description]</p>
       </div>
     </div>
   );
