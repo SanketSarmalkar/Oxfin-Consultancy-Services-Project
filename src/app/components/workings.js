@@ -25,22 +25,12 @@ const PageWithCards = () => {
     },
   ];
 
-  const [pageHeight, setPageHeight] = useState(window.innerHeight);
-
-  useEffect(() => {
-    function handleResize() {
-      setPageHeight(window.innerHeight);
-    }
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const getCardStyle = () => {
-    const screenWidth = window.innerWidth;
-    const cardWidth = `${Math.floor((screenWidth / 3) - 20)}px`;
+    var screenWidth;
+    useEffect(() => {
+      screenWidth = window.innerWidth;
+    }, []);
+    const cardWidth = `${Math.floor((screenWidth / 3)-200)}px`;
 
     return {
       width: cardWidth,
@@ -53,10 +43,10 @@ const PageWithCards = () => {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="w-1/3 p-4 m-2 bg-white rounded-lg shadow"
+            className="w-1/3 p-2 m-2 bg-white rounded-lg shadow"
             style={getCardStyle()}
           >
-            <div className="relative mb-4">
+            <div className="relative mb-2">
               <div className="absolute top-0 bg-blue-900 text-white rounded-tr-lg py-1 px-2">
                 {index + 1}
               </div>
@@ -70,7 +60,7 @@ const PageWithCards = () => {
   };
 
   return (
-    <div className="flex flex-col bg-gray-300" style={{ height: `${pageHeight}px` }}>
+    <div className="flex flex-col bg-gray-300" style={{ height: `550px` }}>
       <div className="pt-16 pb-8">
         <h1 className="text-4xl font-bold text-black text-center">How it works</h1>
       </div>

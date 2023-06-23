@@ -93,7 +93,10 @@ const PopularConsultant = () => {
   }, [activeScreen, numScreens]);
 
   function getNumCards() {
-    const screenWidth = window.innerWidth;
+    var screenWidth;
+    if(typeof window !== 'undefined') {
+      screenWidth = window.innerWidth;
+    }
     if (screenWidth >= 1280) {
       return 9;
     } else if (screenWidth >= 768) {
