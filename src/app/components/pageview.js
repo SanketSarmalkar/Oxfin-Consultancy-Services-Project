@@ -3,9 +3,9 @@
 import React, { useState, useEffect } from "react";
 
 const placeholderTexts = [
-    "try this", 
-    "try that", 
-    "try what",
+    "consulting a lawyer", 
+    "consulting a CA", 
+    "consulting a CS",
 ];
 
 const backgroundImages = [
@@ -103,21 +103,21 @@ export default function PageView() {
           </div>
         </div>
         <div className="mt-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-4">Popular Searches</h2>
+          <h2 className="text-2xl font-bold mb-4">Consult a Expert</h2>
           <div className="flex flex-wrap justify-center">
             <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">
-              Company registration
+              Talk to a Lawyer
             </div>
             <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">
-              GST Registration
+              Talk to a Chartered Accountant
             </div>
             <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">
-              Trademark
+              Talk to a Company Secretary
             </div>
             <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">
-              Accounting & Business Compliance
+              Talk to a IP/Trademark Lawyer
             </div>
-            <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">e-FIR</div>
+            {/* <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">e-FIR</div> */}
           </div>
         </div>
       </div>

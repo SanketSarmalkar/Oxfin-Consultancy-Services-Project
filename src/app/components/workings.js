@@ -61,7 +61,7 @@ const PageWithCards = () => {
 
   return (
     <div className="flex flex-col bg-gray-300" style={{ height: `550px` }}>
-      <div className="pt-16 pb-8">
+      <div className="pt-12 pb-8">
         <h1 className="text-4xl font-bold text-black text-center">How it works</h1>
       </div>
       {renderCards()}
