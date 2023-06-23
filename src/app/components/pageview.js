@@ -103,7 +103,7 @@ export default function PageView() {
           </div>
         </div>
         <div className="mt-8 text-center text-white">
-          <h2 className="text-2xl font-bold mb-4">Consult a Expert</h2>
+          <h2 className="text-2xl font-bold text-blue-900 mb-4">Consult a Expert</h2>
           <div className="flex flex-wrap justify-center">
             <div className="px-4 py-2 m-2 bg-blue-900 rounded-md">
               Talk to a Lawyer

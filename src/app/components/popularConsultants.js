@@ -98,7 +98,7 @@ const PopularConsultant = () => {
       screenWidth = window.innerWidth;
     }
     if (screenWidth >= 1280) {
-      return 7;
+      return 8;
     } else if (screenWidth >= 768) {
       return 4;
     } else {
