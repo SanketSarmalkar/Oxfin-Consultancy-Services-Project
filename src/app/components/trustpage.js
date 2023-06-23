@@ -1,25 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 const TrustPage = () => {
-  const [currentBackground, setCurrentBackground] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentBackground((prevBackground) =>
-        prevBackground === 0 ? 1 : 0
-      );
-    }, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const backgrounds = [
-    "/trust.jpg",
-    "/trust-1.jpg",
-  ];
-
   const trustLines = [
     "TRUST is the foundation stone of our platform",
     "SAFETY of your data is our foremost priority",
@@ -31,12 +12,10 @@ const TrustPage = () => {
     "Stringent data privacy policies",
   ];
 
-  const currentBackgroundImage = backgrounds[currentBackground];
-
   return (
     <div
       className="flex justify-center items-center bg-center bg-fixed bg-no-repeat bg-cover h-[500px]"
-      style={{ backgroundImage: `url(/trust.jpg)` }}
+      style={{ backgroundImage: `url(./images/trust.jpg)` }}
     >
       <div className="bg-white p-8 rounded-lg shadow">
         <div className="text-left">

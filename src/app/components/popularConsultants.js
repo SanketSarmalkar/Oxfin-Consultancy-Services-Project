@@ -121,7 +121,7 @@ const PopularConsultant = () => {
           className="w-32 h-32 mx-auto mb-4 rounded-full flex justify-center items-center bg-center bg-no-repeat bg-cover"
           style={{
             // backgroundImage: `url(https://picsum.photos/seed/${consultant.name}/200)`,
-            backgroundImage: `url("/profile.jpg")`,
+            backgroundImage: `url("./images/profile.jpg")`,
           }}
         />
         <h2 className="text-l font-bold mb-2 text-gray-600 text-center">

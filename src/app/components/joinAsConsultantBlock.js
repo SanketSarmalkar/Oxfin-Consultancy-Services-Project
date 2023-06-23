@@ -4,7 +4,7 @@ const ConsultantBlock = () => {
   return (
     <div
       className="bg-center bg-no-repeat bg-cover bg-fixed h-[600px] flex justify-center items-center"
-      style={{ backgroundImage: "url(/consultant.jpg)" }}
+      style={{ backgroundImage: "url(./images/consultant.jpg)" }}
     >
       <div className="flex justify-center items-center h-full w-2/3">
         <div className="bg-white p-8 rounded-lg shadow">
@@ -32,10 +32,10 @@ const ConsultantBlock = () => {
             </li>
           </ul>
           <div className="text-center mb-6">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded mr-4">
+            <button className="bg-blue-900 text-white px-4 py-2 rounded mr-4">
               Get Started
             </button>
-            <button className="bg-blue-500 text-white px-4 py-2 rounded">
+            <button className="bg-blue-900 text-white px-4 py-2 rounded">
               Read More
             </button>
           </div>
